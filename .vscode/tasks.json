@@ -2,23 +2,26 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build C file",
+            "label": "build active C file", // A descriptive name for your build task
             "type": "shell",
-            "command": "gcc",
+            "command": "gcc", // The compiler command
             "args": [
-                "-g", // Generate debug information
-                "${file}", // The current active file
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}" // Output executable name
-            ],
+                "-g", // Generate debug information (important for debugging)
+                "<span class="math-inline">\{file\}", // The currently active C source file \(e\.g\., main\.c\)
+"\-o", // Output flag
+"</span>{fileDirname}/<span class="math-inline">\{fileBasenameNoExtension\}" // Output executable path and name
+\],
+"options"\: \{
+"cwd"\: "</span>{workspaceFolder}" // Execute the command from the workspace root
+            },
             "group": {
                 "kind": "build",
-                "isDefault": true
+                "isDefault": true // Makes this the default build task when you press Ctrl+Shift+B
             },
             "problemMatcher": [
-                "$gcc"
+                "$gcc" // VS Code will parse GCC errors and warnings
             ],
-            "detail": "Generated task for C compilation"
+            "detail": "Compiles the active C file using GCC."
         }
     ]
 }

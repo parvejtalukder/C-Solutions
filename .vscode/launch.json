@@ -2,16 +2,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch C Program",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}", // Path to the executable
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "name": "Run & Debug C Program", // A descriptive name for your debug configuration
+            "type": "cppdbg", // Specifies the C/C++ debugger type
+            "request": "launch", // We want to launch the program
+            "program": "<span class="math-inline">\{fileDirname\}/</span>{fileBasenameNoExtension}", // Path to the executable compiled by tasks.json
+            "args": [], // Command line arguments to pass to your program (empty for now)
+            "stopAtEntry": false, // Set to true to stop execution at the beginning of main()
+            "cwd": "${fileDirname}", // Current working directory for the debugger
             "environment": [],
-            "externalConsole": true, // Set to true to see console input/output in a separate window
-            "MIMode": "gdb", // Or "lldb" for Clang/LLDB
+            "externalConsole": true, // Set to true to have program I/O in a separate terminal window
+            "MIMode": "gdb", // Specifies the debugger backend (gdb for GCC)
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -19,7 +19,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "build C file" // This links to the task in tasks.json
+            "preLaunchTask": "build active C file" // CRITICAL: This links to your tasks.json build task
         }
     ]
 }
