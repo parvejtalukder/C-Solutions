@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build C file",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g", // Generate debug information
+                "${file}", // The current active file
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}" // Output executable name
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task for C compilation"
+        }
+    ]
+}
