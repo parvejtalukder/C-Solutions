@@ -14,6 +14,7 @@ int main() {
     sub(start, end);
     return 0;
 }
+// the function for getting ans and to display
 void sub(int from, int to) {
     int i, sum = 0;
     for (i = from;i <= to; i++) {
