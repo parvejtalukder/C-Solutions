@@ -5,4 +5,4 @@ int main () {
         printf("%s\n", ara);
     }
     return 0;
-}
+} 
