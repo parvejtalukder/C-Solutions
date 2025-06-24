@@ -1,12 +1,14 @@
 #include <stdio.h>
 int facto(int x);
-
 int main() {
     int num;
     scanf("%d", &num);
-    if (num < 0) {
+    if (num < 13) {
+        if (num < 0) {
     } else {
         long long result = facto(num);
+        printf("%d\n", result);
+    }
     }
 
     return 0;
