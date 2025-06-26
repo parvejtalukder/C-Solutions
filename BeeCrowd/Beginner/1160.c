@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main() {
     int t;
-    int Y = 0;
     int PA, PB;
     double G1, G2;
     scanf("%d", &t);
     while (t--) {
+        int Y = 0;
         scanf("%d %d %lf %lf", &PA, &PB, &G1, &G2);
         if (PA >= 100 && PA <= 1000000 &&
         PB >= 100 && PB <= 1000000 &&
