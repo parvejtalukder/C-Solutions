@@ -1,19 +1,21 @@
 #include <stdio.h>
+#include <string.h>
+
 int main() {
     int t;
     char num[101];
     scanf("%d", &t);
-    if (1 <= t && t <= 100) {
-        int i = 1;
-        while (i<=t) {
-        scanf("%s", &num);
-        if (num % 2 == 0) {
+
+    for (int i = 0; i < t; i++) {
+        scanf("%s", num);
+        int len = strlen(num);
+        char last = num[len - 1];
+        if (last == '0' || last == '2' || last == '4' || last == '6' || last == '8') {
             printf("Even\n");
         } else {
             printf("Odd\n");
-            }
-        i++;
         }
     }
+
     return 0;
 }

@@ -2,12 +2,10 @@
 
 int main() {
     for (int i = 1000; i >= 1; i--) {
-        printf("%d", i);
+        printf("%d\t", i);
         if (i % 5 == 1) {
             printf("\n");
-        } else {
-            printf("\t");
-        }
+        } 
     }
     return 0;
 }
