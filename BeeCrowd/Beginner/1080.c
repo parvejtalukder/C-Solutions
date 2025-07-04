@@ -12,7 +12,6 @@ int main() {
             position = i;
         }
     }
-
     printf("%d\n", max);
     printf("%d\n", position);
 
