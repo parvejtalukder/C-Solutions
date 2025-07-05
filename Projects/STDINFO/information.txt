@@ -1,32 +1,8 @@
 -----------------------------
-Name      : Parvej Husen Talukder 
-Roll      : 48002
-Reg.      : 4800221
-Department: CSE
-University: SIU
------------------------------
-
------------------------------
-Name      : Reduan
-Roll      : 34
-Reg.      : 2443
-Department: TTC
-University: DU
------------------------------
-
------------------------------
-Name      : Md Parvej Husen Talukder
-Roll      : 48002
-Reg.      : 34566
-Department: CDE
-University: SIU
------------------------------
-
------------------------------
-Name      : Tuly
-Roll      : 10
-Reg.      : 11000
-Department: 1std
-University: Tuly Scool
+Name      : parvej husen
+Roll      : 123
+Reg.      : 1234
+Department: cse
+University: siu
 -----------------------------
 
