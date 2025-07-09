@@ -1,8 +1,0 @@
------------------------------
-Name      : parvej husen
-Roll      : 123
-Reg.      : 1234
-Department: cse
-University: siu
------------------------------
-
