@@ -4,8 +4,10 @@ int main()
     int row, colm;
     scanf("%d %d", &row, &colm);
     int arr[row][colm];
-    for(int i = 0; i < row; i++) {
-        for(int j = 0; j < colm; j++) {
+    for(int i = 0; i < row; i++) 
+    {
+        for(int j = 0; j < colm; j++) 
+        {
             scanf("%d", &arr[i][j]);
         }
     }
