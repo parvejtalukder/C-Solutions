@@ -5,15 +5,21 @@ int main() {
 
     for (int i = 0; i < 12; i++) {
         for(int j = 0; j < 12; j++) {
-            arr[i][j] = 0;           
+            arr[i][j] = 0;  
         }
     }
 
-    for(int i = 11; i >= 0; i--) {
-        for(int j = i - 1; j >= 0; j--) {
-            arr[i][j] = 5;
+    for (int i = 0; i < 12; i++) {
+        for(int j = 0; j < 11; j++) {
+            arr[i][j] = 1;
         }
     }
+
+    // for(int i = 0; i < 12; i++) {
+    //     for(int j = i; j < 12 - i; j++) {
+    //         arr[i][j] = 5;
+    //     }
+    // }
 
     for (int i = 0; i < 12; i++) {
         for(int j = 0; j < 12; j++) {
