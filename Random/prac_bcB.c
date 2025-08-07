@@ -10,7 +10,7 @@ int main() {
     }
 
     for (int i = 0; i < 12; i++) {
-        for(int j = 0; j < 11; j++) {
+        for(int j = 0; j < i; j++) {
             arr[i][j] = 1;
         }
     }
