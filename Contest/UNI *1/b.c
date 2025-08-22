@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 int limit;
 int runner(int runTime, int speed, int restTime);
 int min(int a, int b);
